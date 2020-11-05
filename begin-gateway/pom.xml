@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>begin-common</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>org.redisson</groupId>
-            <artifactId>redisson</artifactId>
-            <version>3.13.4</version>
-        </dependency>
-    </dependencies>
+    <artifactId>begin-gateway</artifactId>
 
 
 </project>

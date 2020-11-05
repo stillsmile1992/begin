@@ -6,6 +6,12 @@
     <modules>
         <module>begin-common</module>
         <module>begin-cart</module>
+        <module>begin-like</module>
+        <module>begin-token</module>
+        <module>begin-gateway</module>
+        <module>begin-api</module>
+        <module>begin-entity</module>
+        <module>begin-order</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
