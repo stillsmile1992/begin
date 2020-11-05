@@ -2,11 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="com.example.begin.order.dao.OrderItemDao">
+
     <insert id="insertBatch" parameterType="list">
         insert into t_orderitem(oid,skuid,count,price,ctime) values
         <foreach collection="list" item="o" separator="," open="(" close=")">
             #{o.oid},#{o.skuid},#{o.count},#{o.price},now()
         </foreach>
     </insert>
+
 </mapper>

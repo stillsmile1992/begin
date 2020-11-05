@@ -4,6 +4,7 @@ import com.example.begin.common.dto.OrderAddDto;
 import com.example.begin.common.vo.Result;
 import com.example.begin.order.service.intf.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,5 +26,15 @@ public class OrderController {
     @PostMapping("/add")
     public Result addOrder(OrderAddDto orderAddDto){
         return orderService.addOrderV1(orderAddDto);
+    }
+
+    @GetMapping("/querybyid")
+    public Result queryById(long id){
+        return orderService.queryOrderById(id);
+    }
+
+    @GetMapping("/queryall")
+    public Result queryByUid(int uid){
+        return orderService.queryAll(uid);
     }
 }

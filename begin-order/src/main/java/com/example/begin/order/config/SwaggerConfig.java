@@ -33,7 +33,7 @@ public class SwaggerConfig {
     public Docket createD() {
         return new Docket(DocumentationType.SWAGGER_2).//指定生成那种类型的文档
                 apiInfo(createAI())//文档信息
-                .select().apis(RequestHandlerSelectors.basePackage("com.feri.cloudlike.provider.controller")).//扫描接口所在的包
+                .select().apis(RequestHandlerSelectors.basePackage("com.example.begin.order.controller")).//扫描接口所在的包
                 build();
     }
 }

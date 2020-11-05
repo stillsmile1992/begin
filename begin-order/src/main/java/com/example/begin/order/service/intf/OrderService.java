@@ -31,7 +31,7 @@ public interface OrderService {
      * @param id
      * @return
      */
-    Result queryOrderById(int id);
+    Result queryOrderById(long id);
 
     /**
      * 按uid查询

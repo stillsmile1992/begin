@@ -2,7 +2,7 @@ server:
   port: 8084
 spring:
   application:
-    name: CartProvider
+    name: OrderProvider
   rabbitmq:
     host: 124.70.131.251
     port: 5672

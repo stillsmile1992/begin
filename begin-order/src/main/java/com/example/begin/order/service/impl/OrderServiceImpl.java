@@ -111,7 +111,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Result queryOrderById(int id) {
+    public Result queryOrderById(long id) {
         return null;
     }
 
