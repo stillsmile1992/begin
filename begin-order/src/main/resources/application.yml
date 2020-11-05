@@ -19,3 +19,6 @@ spring:
     username: root
     password: root
     type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  #配置SQL映射文件路径
+  mapper-locations: classpath:mapper/*.xml

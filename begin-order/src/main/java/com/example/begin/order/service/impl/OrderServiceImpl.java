@@ -86,7 +86,13 @@ public class OrderServiceImpl implements OrderService {
                     //调用会员折扣
                     fm = random.nextInt(100);
                     order.setFreemoney(fm);
-                    order.setPaymoney(t - fm);
+
+                    //实付金额校验
+                    if (t - fm > 0) {
+                        order.setPaymoney(t - fm);
+                    } else {
+                        order.setPaymoney(0);
+                    }
                     order.setFlag(OrderType.待支付.getVal());
 
                     //增加订单

@@ -1,5 +1,6 @@
 package com.example.begin.order.dao;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
@@ -19,5 +20,5 @@ public interface OrderItemDao {
      * @param list
      * @return
      */
-    int[] insertBatch(Collection<Object> list);
+    void insertBatch(Collection<Object> list);
 }
